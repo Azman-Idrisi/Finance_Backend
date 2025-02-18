@@ -10,7 +10,7 @@ require('dotenv').config();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Adjust this to match your frontend URL
+    origin: "https://finance-seven-mu.vercel.app", // Adjust this to match your frontend URL
     methods: ["GET", "POST"]
   }
 });
